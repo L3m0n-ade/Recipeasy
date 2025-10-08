@@ -1,8 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*@tailwind variants;*/
+
+/*@import "@tailwindcss/vite";*/
+
+/*@layer base{*/
+/*}*/
+
+/*a {*/
+/*    color:green;*/
+/*}*/
+
+/*@theme {*/
+/*    --color-*: initial;*/
+/*    --color-primary: #ffb347;*/
+/*}*/
+
+/*a{*/
+/*    color:orange;*/
+/*}*/
+
 
 #app{
+    @apply
+    flex min-h-screen justify-center items-center
+    pt-14
+    bg-bg
+    ;
+}
 
-    /*background-color: green !important;*/
+a {
+    @apply
+    hover:text-primary-dk hover:underline
+    ;
+}
+
+button, a.btn {
+    @apply
+    font-bold
+    border-[1.5px]
+    p-2
+    rounded-md
+    hover:no-underline
+    ;
+}
+
+.b-primary {
+    @apply
+    bg-primary hover:bg-primary-dk
+    border-primary-dk
+    text-white hover:text-white
+    ;
+}
+
+.navbar {
+    @apply
+    fixed
+    top-0 left-0 right-0 border-0
+    p-3
+    bg-secondary text-white
+    font-bold
+    ;
+}
+
+.card {
+    @apply
+    bg-white border-bg-mt
+    border-[1.5px] rounded-xl
+    p-5
+    my-3
+    ;
 }

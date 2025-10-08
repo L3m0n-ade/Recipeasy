@@ -4,17 +4,21 @@ function Navbar(){
 
 
     return (
-        <nav className="pb-3 mb-3 border-b">
-            <ul className="flex justify-end space-x-5">
-                <li>
-                    <Link href={route("home")}>Home</Link>
-                </li>
-                <li>
-                    <Link href={route("browse")}>Browse</Link>
-                </li>
-                <li>
-                    <Link href={route("feedback")}>Feedback</Link>
-                </li>
+        <nav className="navbar">
+            <ul className="flex justify-between">
+                <div id="left" className="">
+                    <li>
+                        <Link href={route("home")}>Home</Link>
+                    </li>
+                </div>
+                <div id="right" className="flex gap-3">
+                    <li>
+                        <Link href={route("browse")}>Browse</Link>
+                    </li>
+                    <li>
+                        <Link href={route("feedback")}>Feedback</Link>
+                    </li>
+                </div>
             </ul>
         </nav>
     )
